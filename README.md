@@ -188,8 +188,9 @@ count_vowels("AEIOU")
 # 5
 ```
 
-A `for` loop over a string gives you one character at a time, so this is the
-first question here that loops over something other than a `range()`. Keep a
+A `for` loop works on any **iterable**, which is anything Python can hand you
+one item at a time. A string is one, so this is the first question here that
+loops over something other than a `range()`. Keep a
 count as you go and return it once the loop is finished.
 
 Recall: `include_y` needs a default value, because the tests call this with
@@ -216,6 +217,11 @@ You cannot write this with `range()`, because you do not know how many
 halvings it will take until you start. That is the question a `while` loop
 answers: keep going while something is still true. The tests check you used
 one.
+
+A `while` loop is also the only one here that can become an **infinite loop**,
+which is a loop whose condition never turns false. If your terminal sits there
+doing nothing, press `Ctrl + C` to stop it, then check that something inside
+the loop actually changes the value the condition tests.
 
 ## Modify
 
